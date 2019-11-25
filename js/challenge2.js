@@ -5,7 +5,7 @@
         }
 
         else {
-          $("home").val("");
+          $("#home").val("");
           $("#home").prop("disabled", false);
         }
         
