@@ -8,3 +8,16 @@
 			$("#image").css("background-image", "url()");
 			$('#image').html("Hover/Tab over an image below.");
 		}); 
+
+		$('img').focus(function(){
+			$('#image').html(this.alt);
+			$("#image").css("background-image", "url('"+$(this).attr('src')+"')"); 
+
+		});
+
+		$('img').blur(function(){
+			$("#image").css("background-image", "url()");
+			$('#image').html("Hover/Tab over an image below.");
+		}); 
+
+
